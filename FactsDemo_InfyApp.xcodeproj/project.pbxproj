@@ -35,6 +35,7 @@
 		F27D7042253429A5000B7FCC /* CommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7041253429A5000B7FCC /* CommonProtocol.swift */; };
 		F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704425342B76000B7FCC /* FactsCellViewModel.swift */; };
 		F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7046253449FF000B7FCC /* HTTPManager.swift */; };
+		F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70482534573D000B7FCC /* ConstantsAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		F27D7041253429A5000B7FCC /* CommonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonProtocol.swift; sourceTree = "<group>"; };
 		F27D704425342B76000B7FCC /* FactsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCellViewModel.swift; sourceTree = "<group>"; };
 		F27D7046253449FF000B7FCC /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		F27D70482534573D000B7FCC /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				F27D703825331C8C000B7FCC /* Reachability.swift */,
+				F27D70482534573D000B7FCC /* ConstantsAPI.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				F27D702825331160000B7FCC /* Result.swift in Sources */,
 				F27D6F0E25330BB9000B7FCC /* DynamicValue.swift in Sources */,
 				F27D703F2533235F000B7FCC /* FactsViewModelProtocol.swift in Sources */,
+				F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */,
 				F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */,
 				F27D702925331160000B7FCC /* ErrorResult.swift in Sources */,
 				F27D6F0D25330BB9000B7FCC /* Dynamic.swift in Sources */,
