@@ -34,6 +34,7 @@
 		F27D703F2533235F000B7FCC /* FactsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703E2533235E000B7FCC /* FactsViewModelProtocol.swift */; };
 		F27D7042253429A5000B7FCC /* CommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7041253429A5000B7FCC /* CommonProtocol.swift */; };
 		F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704425342B76000B7FCC /* FactsCellViewModel.swift */; };
+		F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7046253449FF000B7FCC /* HTTPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F27D703E2533235E000B7FCC /* FactsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsViewModelProtocol.swift; sourceTree = "<group>"; };
 		F27D7041253429A5000B7FCC /* CommonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonProtocol.swift; sourceTree = "<group>"; };
 		F27D704425342B76000B7FCC /* FactsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCellViewModel.swift; sourceTree = "<group>"; };
+		F27D7046253449FF000B7FCC /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				F27D702B253311A2000B7FCC /* Parser */,
 				F27D702A25331192000B7FCC /* Network */,
 				F27D702525331144000B7FCC /* Results */,
+				F27D7046253449FF000B7FCC /* HTTPManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				F27D702825331160000B7FCC /* Result.swift in Sources */,
 				F27D6F0E25330BB9000B7FCC /* DynamicValue.swift in Sources */,
 				F27D703F2533235F000B7FCC /* FactsViewModelProtocol.swift in Sources */,
+				F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */,
 				F27D702925331160000B7FCC /* ErrorResult.swift in Sources */,
 				F27D6F0D25330BB9000B7FCC /* Dynamic.swift in Sources */,
 				F27D6EFF25321A19000B7FCC /* UITableViewExtension.swift in Sources */,

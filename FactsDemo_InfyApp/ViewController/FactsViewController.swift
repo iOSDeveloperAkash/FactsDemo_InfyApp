@@ -26,7 +26,7 @@ class FactsViewController: UIViewController {
         view.backgroundColor = .white
         configureTableView()
         configuretableViewCell()
-        self.viewModel?.fetchServiceCall()
+//        self.viewModel?.fetchServiceCall()
     }
     
     fileprivate func configureTableView(){
@@ -53,27 +53,27 @@ class FactsViewController: UIViewController {
     
     @objc func serviceCall() {
         DispatchQueue.main.async {
-            self.viewModel?.fetchServiceCall()
+//            self.viewModel?.fetchServiceCall()
         }
         refreshControl.endRefreshing()
     }
 }
 
-extension FactsViewController: Configurable {
-    
-    typealias T = FactsViewModel
-    
-    func bind(to model: FactsViewModel) {
-        self.viewModel = model
-        self.dataSource = self.viewModel?.dataSource as? FactsDataSource
-        
-        self.viewModel?.dataSource?.facts.addAndNotify(observer: self, completionHandler: { [weak self] in
-            self?.factsTableView.reloadData()
-        })
-        
-        self.viewModel?.title.addAndNotify(observer: self, completionHandler: { [weak self] in
-            self?.navigationItem.title = self?.viewModel?.title.value
-        })
-    }
-}
+//extension FactsViewController: Configurable {
+//
+//    typealias T = FactsViewModel
+//
+//    func bind(to model: FactsViewModel) {
+//        self.viewModel = model
+//        self.dataSource = self.viewModel?.dataSource as? FactsDataSource
+//
+//        self.viewModel?.dataSource?.facts.addAndNotify(observer: self, completionHandler: { [weak self] in
+//            self?.factsTableView.reloadData()
+//        })
+//
+//        self.viewModel?.title.addAndNotify(observer: self, completionHandler: { [weak self] in
+//            self?.navigationItem.title = self?.viewModel?.title.value
+//        })
+//    }
+//}
 
