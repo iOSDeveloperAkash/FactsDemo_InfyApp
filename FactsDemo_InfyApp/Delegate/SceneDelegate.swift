@@ -20,6 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let winScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: winScene)
         let factsViewController = FactsViewController()
+        let dataSource = FactsDataSource()
+        let factsViewModel = FactsViewModel(withDataSource: dataSource)
+        factsViewController.bind(to: factsViewModel)
+
         window?.rootViewController = UINavigationController(rootViewController: factsViewController)
         window?.makeKeyAndVisible()
 

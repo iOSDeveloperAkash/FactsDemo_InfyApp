@@ -13,6 +13,27 @@
 		F27D6EE025306607000B7FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27D6EDF25306607000B7FCC /* Assets.xcassets */; };
 		F27D6EE325306607000B7FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27D6EE125306607000B7FCC /* LaunchScreen.storyboard */; };
 		F27D6EEE25306608000B7FCC /* FactsDemo_InfyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EED25306608000B7FCC /* FactsDemo_InfyAppTests.swift */; };
+		F27D6EFC2531A1B8000B7FCC /* FactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EFB2531A1B8000B7FCC /* FactsTableViewCell.swift */; };
+		F27D6EFF25321A19000B7FCC /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EFE25321A19000B7FCC /* UITableViewExtension.swift */; };
+		F27D6F0125321AF9000B7FCC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F0025321AF9000B7FCC /* ReusableView.swift */; };
+		F27D6F042532F26C000B7FCC /* FactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F032532F26C000B7FCC /* FactsDataSource.swift */; };
+		F27D6F072532F432000B7FCC /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F062532F432000B7FCC /* FactModel.swift */; };
+		F27D6F0925330B14000B7FCC /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F0825330B14000B7FCC /* FactsViewModel.swift */; };
+		F27D6F0D25330BB9000B7FCC /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F0A25330BB8000B7FCC /* Dynamic.swift */; };
+		F27D6F0E25330BB9000B7FCC /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F0B25330BB8000B7FCC /* DynamicValue.swift */; };
+		F27D6F0F25330BB9000B7FCC /* FactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6F0C25330BB9000B7FCC /* FactsModel.swift */; };
+		F27D702825331160000B7FCC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70262533115F000B7FCC /* Result.swift */; };
+		F27D702925331160000B7FCC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D702725331160000B7FCC /* ErrorResult.swift */; };
+		F27D702D253317E6000B7FCC /* ParserHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D702C253317E6000B7FCC /* ParserHelp.swift */; };
+		F27D703325331B73000B7FCC /* FactsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703125331B72000B7FCC /* FactsServiceProtocol.swift */; };
+		F27D703425331B73000B7FCC /* FactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703225331B72000B7FCC /* FactsService.swift */; };
+		F27D703625331C46000B7FCC /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703525331C46000B7FCC /* RequestHandler.swift */; };
+		F27D703925331C8C000B7FCC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703825331C8C000B7FCC /* Reachability.swift */; };
+		F27D703B25331CCA000B7FCC /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703A25331CCA000B7FCC /* RequestService.swift */; };
+		F27D703D25331D37000B7FCC /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703C25331D37000B7FCC /* RequestFactory.swift */; };
+		F27D703F2533235F000B7FCC /* FactsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D703E2533235E000B7FCC /* FactsViewModelProtocol.swift */; };
+		F27D7042253429A5000B7FCC /* CommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7041253429A5000B7FCC /* CommonProtocol.swift */; };
+		F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704425342B76000B7FCC /* FactsCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +57,27 @@
 		F27D6EE925306608000B7FCC /* FactsDemo_InfyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsDemo_InfyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27D6EED25306608000B7FCC /* FactsDemo_InfyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDemo_InfyAppTests.swift; sourceTree = "<group>"; };
 		F27D6EEF25306608000B7FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27D6EFB2531A1B8000B7FCC /* FactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTableViewCell.swift; sourceTree = "<group>"; };
+		F27D6EFE25321A19000B7FCC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F27D6F0025321AF9000B7FCC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F27D6F032532F26C000B7FCC /* FactsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDataSource.swift; sourceTree = "<group>"; };
+		F27D6F062532F432000B7FCC /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		F27D6F0825330B14000B7FCC /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+		F27D6F0A25330BB8000B7FCC /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		F27D6F0B25330BB8000B7FCC /* DynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		F27D6F0C25330BB9000B7FCC /* FactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsModel.swift; sourceTree = "<group>"; };
+		F27D70262533115F000B7FCC /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F27D702725331160000B7FCC /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		F27D702C253317E6000B7FCC /* ParserHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelp.swift; sourceTree = "<group>"; };
+		F27D703125331B72000B7FCC /* FactsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsServiceProtocol.swift; sourceTree = "<group>"; };
+		F27D703225331B72000B7FCC /* FactsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsService.swift; sourceTree = "<group>"; };
+		F27D703525331C46000B7FCC /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		F27D703825331C8C000B7FCC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F27D703A25331CCA000B7FCC /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		F27D703C25331D37000B7FCC /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		F27D703E2533235E000B7FCC /* FactsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsViewModelProtocol.swift; sourceTree = "<group>"; };
+		F27D7041253429A5000B7FCC /* CommonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonProtocol.swift; sourceTree = "<group>"; };
+		F27D704425342B76000B7FCC /* FactsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +119,16 @@
 		F27D6ED5253065FE000B7FCC /* FactsDemo_InfyApp */ = {
 			isa = PBXGroup;
 			children = (
+				F27D70402534298D000B7FCC /* Utilities */,
+				F27D703725331C83000B7FCC /* Utility */,
+				F27D6F9425330C98000B7FCC /* Services */,
 				F27D6EF925306E9E000B7FCC /* Delegate */,
+				F27D6EFD253219F0000B7FCC /* Extensions */,
+				F27D6F022532F256000B7FCC /* ViewModels */,
+				F27D6EFA2531A12E000B7FCC /* View */,
+				F27D6F052532F41F000B7FCC /* Models */,
 				F27D6EF825306E8A000B7FCC /* ViewController */,
+				F27D703025331B5F000B7FCC /* FeedsService */,
 				F27D6EDF25306607000B7FCC /* Assets.xcassets */,
 				F27D6EE125306607000B7FCC /* LaunchScreen.storyboard */,
 				F27D6EE425306607000B7FCC /* Info.plist */,
@@ -110,6 +160,115 @@
 				F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F27D6EFA2531A12E000B7FCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F27D704325342B5B000B7FCC /* ViewModel */,
+				F27D6EFB2531A1B8000B7FCC /* FactsTableViewCell.swift */,
+				F27D6F0025321AF9000B7FCC /* ReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F27D6EFD253219F0000B7FCC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F27D6EFE25321A19000B7FCC /* UITableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F27D6F022532F256000B7FCC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F27D6F0825330B14000B7FCC /* FactsViewModel.swift */,
+				F27D703E2533235E000B7FCC /* FactsViewModelProtocol.swift */,
+				F27D6F032532F26C000B7FCC /* FactsDataSource.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F27D6F052532F41F000B7FCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F27D6F062532F432000B7FCC /* FactModel.swift */,
+				F27D6F0A25330BB8000B7FCC /* Dynamic.swift */,
+				F27D6F0B25330BB8000B7FCC /* DynamicValue.swift */,
+				F27D6F0C25330BB9000B7FCC /* FactsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F27D6F9425330C98000B7FCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F27D702B253311A2000B7FCC /* Parser */,
+				F27D702A25331192000B7FCC /* Network */,
+				F27D702525331144000B7FCC /* Results */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F27D702525331144000B7FCC /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				F27D702725331160000B7FCC /* ErrorResult.swift */,
+				F27D70262533115F000B7FCC /* Result.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		F27D702A25331192000B7FCC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F27D703525331C46000B7FCC /* RequestHandler.swift */,
+				F27D703A25331CCA000B7FCC /* RequestService.swift */,
+				F27D703C25331D37000B7FCC /* RequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F27D702B253311A2000B7FCC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				F27D702C253317E6000B7FCC /* ParserHelp.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		F27D703025331B5F000B7FCC /* FeedsService */ = {
+			isa = PBXGroup;
+			children = (
+				F27D703225331B72000B7FCC /* FactsService.swift */,
+				F27D703125331B72000B7FCC /* FactsServiceProtocol.swift */,
+			);
+			path = FeedsService;
+			sourceTree = "<group>";
+		};
+		F27D703725331C83000B7FCC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F27D703825331C8C000B7FCC /* Reachability.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F27D70402534298D000B7FCC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F27D7041253429A5000B7FCC /* CommonProtocol.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F27D704325342B5B000B7FCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F27D704425342B76000B7FCC /* FactsCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +371,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27D703425331B73000B7FCC /* FactsService.swift in Sources */,
 				F27D6EDB253065FE000B7FCC /* FactsViewController.swift in Sources */,
+				F27D703925331C8C000B7FCC /* Reachability.swift in Sources */,
+				F27D703D25331D37000B7FCC /* RequestFactory.swift in Sources */,
+				F27D702825331160000B7FCC /* Result.swift in Sources */,
+				F27D6F0E25330BB9000B7FCC /* DynamicValue.swift in Sources */,
+				F27D703F2533235F000B7FCC /* FactsViewModelProtocol.swift in Sources */,
+				F27D702925331160000B7FCC /* ErrorResult.swift in Sources */,
+				F27D6F0D25330BB9000B7FCC /* Dynamic.swift in Sources */,
+				F27D6EFF25321A19000B7FCC /* UITableViewExtension.swift in Sources */,
 				F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */,
+				F27D702D253317E6000B7FCC /* ParserHelp.swift in Sources */,
+				F27D6F0F25330BB9000B7FCC /* FactsModel.swift in Sources */,
+				F27D703325331B73000B7FCC /* FactsServiceProtocol.swift in Sources */,
+				F27D6F0925330B14000B7FCC /* FactsViewModel.swift in Sources */,
+				F27D703B25331CCA000B7FCC /* RequestService.swift in Sources */,
+				F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */,
+				F27D6F0125321AF9000B7FCC /* ReusableView.swift in Sources */,
 				F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */,
+				F27D703625331C46000B7FCC /* RequestHandler.swift in Sources */,
+				F27D7042253429A5000B7FCC /* CommonProtocol.swift in Sources */,
+				F27D6F072532F432000B7FCC /* FactModel.swift in Sources */,
+				F27D6EFC2531A1B8000B7FCC /* FactsTableViewCell.swift in Sources */,
+				F27D6F042532F26C000B7FCC /* FactsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
