@@ -12,9 +12,7 @@ class FactsViewController: UIViewController {
     
     let factsTableView = UITableView()
     private let refreshControl = UIRefreshControl()
-    var rowData = [Row]()
     private var viewModel = FactsViewModel()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +27,7 @@ class FactsViewController: UIViewController {
         configuretableViewCell()
         viewModel.fetchFacts{ [weak self] breaches in
             DispatchQueue.main.async {
+                self?.navigationItem.title = self?.viewModel.title
                 self?.updateUI()
             }
         }
@@ -45,7 +44,7 @@ class FactsViewController: UIViewController {
         factsTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         factsTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         factsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-//        factsTableView.dataSource = self
+        factsTableView.dataSource = self
         factsTableView.tableFooterView = UIView(frame: .zero)
         factsTableView.estimatedRowHeight = 150
         factsTableView.rowHeight = UITableView.automaticDimension
@@ -62,7 +61,11 @@ class FactsViewController: UIViewController {
     
     @objc func serviceCall() {
         DispatchQueue.main.async {
-            //            self.viewModel?.fetchServiceCall()
+            self.viewModel.fetchFacts{ [weak self] _ in
+                DispatchQueue.main.async {
+                    self?.updateUI()
+                }
+            }
         }
         refreshControl.endRefreshing()
     }
@@ -74,8 +77,15 @@ extension FactsViewController:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath) as! FactsTableViewCell
+        let cell: FactsTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         guard let fact = viewModel.rows[indexPath.row] else {return cell}
+        if let fact = viewModel.rows[indexPath.row]{
+            cell.populateCell(with: fact)
+            guard let imageUrl = fact.imageHref else {
+                return cell
+            }
+            ImageHelper().updateImageForTableViewCell(cell, inTableView: tableView, imageURL: imageUrl, atIndexPath: indexPath)
+        }
         cell.populateCell(with: fact)
         return cell
     }

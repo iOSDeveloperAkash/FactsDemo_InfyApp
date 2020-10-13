@@ -21,6 +21,8 @@
 		F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70482534573D000B7FCC /* ConstantsAPI.swift */; };
 		F27D704C2535890E000B7FCC /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704A2535890E000B7FCC /* Row.swift */; };
 		F27D704D2535890E000B7FCC /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704B2535890E000B7FCC /* Fact.swift */; };
+		F27D704F2535BBD4000B7FCC /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704E2535BBD4000B7FCC /* ImageHelper.swift */; };
+		F27D70512535BC0E000B7FCC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70502535BC0E000B7FCC /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		F27D70482534573D000B7FCC /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
 		F27D704A2535890E000B7FCC /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		F27D704B2535890E000B7FCC /* Fact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		F27D704E2535BBD4000B7FCC /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		F27D70502535BC0E000B7FCC /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F27D7046253449FF000B7FCC /* HTTPManager.swift */,
+				F27D70502535BC0E000B7FCC /* ImageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F27D70482534573D000B7FCC /* ConstantsAPI.swift */,
+				F27D704E2535BBD4000B7FCC /* ImageHelper.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 				F27D6F0125321AF9000B7FCC /* ReusableView.swift in Sources */,
 				F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */,
 				F27D6EFC2531A1B8000B7FCC /* FactsTableViewCell.swift in Sources */,
+				F27D704F2535BBD4000B7FCC /* ImageHelper.swift in Sources */,
+				F27D70512535BC0E000B7FCC /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@
 import UIKit
 
 class FactsTableViewCell: UITableViewCell {
-    var factsCellViewModel: FactsCellViewModel?
 
     let containerView:UIView = {
         let view = UIView()
@@ -90,21 +89,12 @@ class FactsTableViewCell: UITableViewCell {
         self.descriptionLabel.text = nil
         
     }
-}
-
-extension FactsTableViewCell: Configurable {
-    typealias T = FactsCellViewModel
     
-    func bind(to model: FactsCellViewModel) {
-        self.factsCellViewModel = model
-        if let fact = self.factsCellViewModel?.fact.value {
-            self.populateCell(with: fact)
-        }
-    }
-
-    func populateCell(with fact: FactModel) {
-        self.titleLabel.text = fact.title
-        self.descriptionLabel.text = fact.description
-        self.factsImageView.image = UIImage(named: "Placeholder")
-    }
+    func populateCell(with fact: Row) {
+         self.titleLabel.text = fact.title
+         self.descriptionLabel.text = fact.descriptionField
+         self.factsImageView.image = UIImage(named: "Placeholder")
+     }
 }
+
+
