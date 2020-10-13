@@ -33,7 +33,8 @@ class HttpManager{
                     completionBlock(.failure(HTTPError.invalidResponse(data, response)))
                     return
             }
-            
+            let json = try! JSONSerialization.jsonObject(with: responseData, options: []) as? [String : Any]
+            print(json)
             completionBlock(.success(responseData))
         }
         task.resume()

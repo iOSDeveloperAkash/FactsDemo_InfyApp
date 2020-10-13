@@ -63,7 +63,7 @@ extension FactsViewController: Configurable {
 
     typealias T = FactsViewModel
 
-    func bind(to model: FactsViewModel) {
+    func bind(to model: T) {
         self.viewModel = model
         self.dataSource = self.viewModel?.dataSource as? FactsDataSource
 

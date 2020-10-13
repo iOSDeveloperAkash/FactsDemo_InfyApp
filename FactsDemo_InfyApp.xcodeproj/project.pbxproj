@@ -36,6 +36,8 @@
 		F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704425342B76000B7FCC /* FactsCellViewModel.swift */; };
 		F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7046253449FF000B7FCC /* HTTPManager.swift */; };
 		F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70482534573D000B7FCC /* ConstantsAPI.swift */; };
+		F27D704C2535890E000B7FCC /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704A2535890E000B7FCC /* Row.swift */; };
+		F27D704D2535890E000B7FCC /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704B2535890E000B7FCC /* Fact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		F27D704425342B76000B7FCC /* FactsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCellViewModel.swift; sourceTree = "<group>"; };
 		F27D7046253449FF000B7FCC /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		F27D70482534573D000B7FCC /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
+		F27D704A2535890E000B7FCC /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		F27D704B2535890E000B7FCC /* Fact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,8 @@
 		F27D6F052532F41F000B7FCC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F27D704B2535890E000B7FCC /* Fact.swift */,
+				F27D704A2535890E000B7FCC /* Row.swift */,
 				F27D6F062532F432000B7FCC /* FactModel.swift */,
 				F27D6F0A25330BB8000B7FCC /* Dynamic.swift */,
 				F27D6F0B25330BB8000B7FCC /* DynamicValue.swift */,
@@ -388,6 +394,7 @@
 				F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */,
 				F27D702925331160000B7FCC /* ErrorResult.swift in Sources */,
 				F27D6F0D25330BB9000B7FCC /* Dynamic.swift in Sources */,
+				F27D704D2535890E000B7FCC /* Fact.swift in Sources */,
 				F27D6EFF25321A19000B7FCC /* UITableViewExtension.swift in Sources */,
 				F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */,
 				F27D702D253317E6000B7FCC /* ParserHelp.swift in Sources */,
@@ -396,6 +403,7 @@
 				F27D6F0925330B14000B7FCC /* FactsViewModel.swift in Sources */,
 				F27D703B25331CCA000B7FCC /* RequestService.swift in Sources */,
 				F27D704525342B76000B7FCC /* FactsCellViewModel.swift in Sources */,
+				F27D704C2535890E000B7FCC /* Row.swift in Sources */,
 				F27D6F0125321AF9000B7FCC /* ReusableView.swift in Sources */,
 				F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */,
 				F27D703625331C46000B7FCC /* RequestHandler.swift in Sources */,
