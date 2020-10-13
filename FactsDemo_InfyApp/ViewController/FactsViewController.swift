@@ -11,10 +11,11 @@ import UIKit
 class FactsViewController: UIViewController {
     
     let factsTableView = UITableView()
-    var dataSource: FactsDataSource?
     private let refreshControl = UIRefreshControl()
-    private var viewModel: FactsViewModel?
+    var rowData = [Row]()
+    private var viewModel = FactsViewModel()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,7 +27,15 @@ class FactsViewController: UIViewController {
         view.backgroundColor = .white
         configureTableView()
         configuretableViewCell()
-        self.viewModel?.fetchServiceCall()
+        viewModel.fetchFacts{ [weak self] breaches in
+            DispatchQueue.main.async {
+                self?.updateUI()
+            }
+        }
+    }
+    
+    func updateUI() {
+        factsTableView.reloadData()
     }
     
     fileprivate func configureTableView(){
@@ -36,7 +45,7 @@ class FactsViewController: UIViewController {
         factsTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         factsTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         factsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        factsTableView.dataSource = dataSource
+//        factsTableView.dataSource = self
         factsTableView.tableFooterView = UIView(frame: .zero)
         factsTableView.estimatedRowHeight = 150
         factsTableView.rowHeight = UITableView.automaticDimension
@@ -53,27 +62,22 @@ class FactsViewController: UIViewController {
     
     @objc func serviceCall() {
         DispatchQueue.main.async {
-            self.viewModel?.fetchServiceCall()
+            //            self.viewModel?.fetchServiceCall()
         }
         refreshControl.endRefreshing()
     }
 }
 
-extension FactsViewController: Configurable {
-
-    typealias T = FactsViewModel
-
-    func bind(to model: T) {
-        self.viewModel = model
-        self.dataSource = self.viewModel?.dataSource as? FactsDataSource
-
-        self.viewModel?.dataSource?.facts.addAndNotify(observer: self, completionHandler: { [weak self] in
-            self?.factsTableView.reloadData()
-        })
-
-        self.viewModel?.title.addAndNotify(observer: self, completionHandler: { [weak self] in
-            self?.navigationItem.title = self?.viewModel?.title.value
-        })
+extension FactsViewController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.rows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as! FactsTableViewCell
+        guard let fact = viewModel.rows[indexPath.row] else {return cell}
+        cell.populateCell(with: fact)
+        return cell
     }
 }
 
