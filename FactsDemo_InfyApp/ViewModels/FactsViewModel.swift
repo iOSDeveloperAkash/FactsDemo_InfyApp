@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 class FactsViewModel{
     var rows = [Row?]()
     var title = String()
@@ -33,7 +35,6 @@ class FactsViewModel{
                 }
             }
         }
+        
     }
 }
-
-
