@@ -19,8 +19,8 @@ class HttpManager{
             completionBlock(.failure(HTTPError.invalidUrl))
             return
         }
-        
-        let task = URLSession.shared.dataTask(with: url){
+        let request = RequestFactory.request(method: .GET, url: url)
+        let task = URLSession.shared.dataTask(with: request){
             data, response, error in
             guard error == nil else {
                 completionBlock(.failure(error!))
@@ -33,7 +33,11 @@ class HttpManager{
                     completionBlock(.failure(HTTPError.invalidResponse(data, response)))
                     return
             }
-            completionBlock(.success(responseData))
+            if let response = String(data:responseData, encoding: String.Encoding.ascii),
+                let responseData = response.data(using: .utf8){
+                completionBlock(.success(responseData))
+            }
+            
         }
         task.resume()
     }

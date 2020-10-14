@@ -10,6 +10,7 @@
 		F20CBCF22537030300E6D4A9 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCF12537030300E6D4A9 /* Reach.swift */; };
 		F20CBCF42537033000E6D4A9 /* MyModel in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF32537033000E6D4A9 /* MyModel */; };
 		F20CBCF62537073200E6D4A9 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCF52537073200E6D4A9 /* RequestFactory.swift */; };
+		F20CBCFA253729C800E6D4A9 /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF9253729C800E6D4A9 /* facts.json */; };
 		F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED6253065FE000B7FCC /* AppDelegate.swift */; };
 		F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */; };
 		F27D6EDB253065FE000B7FCC /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EDA253065FE000B7FCC /* FactsViewController.swift */; };
@@ -43,6 +44,7 @@
 		F20CBCF12537030300E6D4A9 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
 		F20CBCF32537033000E6D4A9 /* MyModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyModel; sourceTree = "<group>"; };
 		F20CBCF52537073200E6D4A9 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		F20CBCF9253729C800E6D4A9 /* facts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facts.json; sourceTree = "<group>"; };
 		F27D6ED3253065FE000B7FCC /* Facts App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facts App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27D6ED6253065FE000B7FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F20CBCF82537298600E6D4A9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F20CBCF9253729C800E6D4A9 /* facts.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		F27D6ECA253065FE000B7FCC = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		F27D6EEC25306608000B7FCC /* FactsDemo_InfyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				F20CBCF82537298600E6D4A9 /* Mocks */,
 				F27D6EED25306608000B7FCC /* FactsDemo_InfyAppTests.swift */,
 				F27D6EEF25306608000B7FCC /* Info.plist */,
 			);
@@ -293,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20CBCFA253729C800E6D4A9 /* facts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
