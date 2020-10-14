@@ -23,7 +23,8 @@ class FactsViewModel{
                 do{
                     let facts = try decoder.decode(Fact.self, from: data)
                     guard let rows = facts.rows else { return }
-                    self?.rows = rows
+                    let filteredFacts = rows.filter({ $0.title != nil || $0.descriptionField != nil || $0.imageHref != nil })
+                    self?.rows = filteredFacts
                     self?.title = facts.title ?? ""
                     completion(.success(try decoder.decode(Fact.self, from: data)))
                 }catch{

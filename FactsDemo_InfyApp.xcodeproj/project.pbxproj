@@ -23,6 +23,7 @@
 		F27D704D2535890E000B7FCC /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704B2535890E000B7FCC /* Fact.swift */; };
 		F27D704F2535BBD4000B7FCC /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704E2535BBD4000B7FCC /* ImageHelper.swift */; };
 		F27D70512535BC0E000B7FCC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70502535BC0E000B7FCC /* ImageManager.swift */; };
+		F27D70532536D975000B7FCC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D70522536D975000B7FCC /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F27D704B2535890E000B7FCC /* Fact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		F27D704E2535BBD4000B7FCC /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		F27D70502535BC0E000B7FCC /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		F27D70522536D975000B7FCC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			children = (
 				F27D70482534573D000B7FCC /* ConstantsAPI.swift */,
 				F27D704E2535BBD4000B7FCC /* ImageHelper.swift */,
+				F27D70522536D975000B7FCC /* Reachability.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27D70532536D975000B7FCC /* Reachability.swift in Sources */,
 				F27D6EDB253065FE000B7FCC /* FactsViewController.swift in Sources */,
 				F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */,
 				F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */,
