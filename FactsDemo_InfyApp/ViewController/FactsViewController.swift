@@ -43,7 +43,7 @@ class FactsViewController: UIViewController {
         factsTableView.reloadData()
     }
     
-    fileprivate func configureTableView(){
+     func configureTableView(){
         view.addSubview(factsTableView)
         factsTableView.translatesAutoresizingMaskIntoConstraints = false
         factsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true

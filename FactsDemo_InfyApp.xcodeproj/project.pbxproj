@@ -13,6 +13,7 @@
 		F20CBCFC25381CB300E6D4A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFB25381CB300E6D4A9 /* Reachability.swift */; };
 		F20CBCFE2538247F00E6D4A9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */; };
 		F20CBD002538255000E6D4A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCFF2538255000E6D4A9 /* Localizable.strings */; };
+		F20CBD0325385A9400E6D4A9 /* FeedsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */; };
 		F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED6253065FE000B7FCC /* AppDelegate.swift */; };
 		F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */; };
 		F27D6EDB253065FE000B7FCC /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EDA253065FE000B7FCC /* FactsViewController.swift */; };
@@ -49,6 +50,7 @@
 		F20CBCFB25381CB300E6D4A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F20CBCFF2538255000E6D4A9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsServiceTests.swift; sourceTree = "<group>"; };
 		F27D6ED3253065FE000B7FCC /* Facts App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facts App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27D6ED6253065FE000B7FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		F20CBD01253832F400E6D4A9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F27D70482534573D000B7FCC /* ConstantsAPI.swift */,
+				F20CBCFF2538255000E6D4A9 /* Localizable.strings */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		F27D6ECA253065FE000B7FCC = {
 			isa = PBXGroup;
 			children = (
@@ -119,18 +130,18 @@
 		F27D6ED5253065FE000B7FCC /* FactsDemo_InfyApp */ = {
 			isa = PBXGroup;
 			children = (
-				F27D703725331C83000B7FCC /* Utility */,
-				F27D6F9425330C98000B7FCC /* Services */,
 				F27D6EF925306E9E000B7FCC /* Delegate */,
-				F27D6EFD253219F0000B7FCC /* Extensions */,
-				F27D6F022532F256000B7FCC /* ViewModels */,
-				F27D6EFA2531A12E000B7FCC /* View */,
+				F27D6F9425330C98000B7FCC /* Services */,
 				F27D6F052532F41F000B7FCC /* Models */,
+				F27D6EFA2531A12E000B7FCC /* View */,
+				F27D6F022532F256000B7FCC /* ViewModels */,
 				F27D6EF825306E8A000B7FCC /* ViewController */,
+				F27D6EFD253219F0000B7FCC /* Extensions */,
+				F20CBD01253832F400E6D4A9 /* Support */,
+				F27D703725331C83000B7FCC /* Utility */,
 				F27D6EDF25306607000B7FCC /* Assets.xcassets */,
 				F27D6EE125306607000B7FCC /* LaunchScreen.storyboard */,
 				F27D6EE425306607000B7FCC /* Info.plist */,
-				F20CBCFF2538255000E6D4A9 /* Localizable.strings */,
 			);
 			path = FactsDemo_InfyApp;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 			children = (
 				F20CBCF82537298600E6D4A9 /* Mocks */,
 				F27D6EED25306608000B7FCC /* FactsDemo_InfyAppTests.swift */,
+				F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */,
 				F27D6EEF25306608000B7FCC /* Info.plist */,
 			);
 			path = FactsDemo_InfyAppTests;
@@ -203,6 +215,7 @@
 			children = (
 				F27D7046253449FF000B7FCC /* HTTPManager.swift */,
 				F27D70502535BC0E000B7FCC /* ImageManager.swift */,
+				F20CBCF52537073200E6D4A9 /* RequestFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -210,10 +223,8 @@
 		F27D703725331C83000B7FCC /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				F27D70482534573D000B7FCC /* ConstantsAPI.swift */,
 				F27D704E2535BBD4000B7FCC /* ImageHelper.swift */,
 				F20CBCF12537030300E6D4A9 /* Reach.swift */,
-				F20CBCF52537073200E6D4A9 /* RequestFactory.swift */,
 				F20CBCFB25381CB300E6D4A9 /* Reachability.swift */,
 			);
 			path = Utility;
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27D6EEE25306608000B7FCC /* FactsDemo_InfyAppTests.swift in Sources */,
+				F20CBD0325385A9400E6D4A9 /* FeedsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactsDemo_InfyApp.app/FactsDemo_InfyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facts App.app/Facts App";
 			};
 			name = Debug;
 		};
@@ -562,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactsDemo_InfyApp.app/FactsDemo_InfyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facts App.app/Facts App";
 			};
 			name = Release;
 		};

@@ -1,9 +1,5 @@
-//
-//  RequestFactory.swift
-//  FactsDemoApp
-//
-//  Created by BRIJESH SINGH on 20/07/20.
-//  Copyright © 2020 com.FactsDemoApp. All rights reserved.
+//  Created by Akash on 09/15/20.
+//  Copyright © 2020 FactsDemo_InfyApp. All rights reserved.
 //
 
 import Foundation
