@@ -17,48 +17,27 @@ class FactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        NotificationCenter.default
-            .addObserver(self,
-                         selector: #selector(statusManager),
-                         name: .flagsChanged,
-                         object: nil)
-        updateUserInterface()
         intialSetUp()
         setupUIRefreshControl()
     }
-    
-    func updateUserInterface() {
-        switch Network.reachability.status {
-        case .unreachable:
-            view.backgroundColor = .red
-        case .wwan:
-            view.backgroundColor = .yellow
-        case .wifi:
-            view.backgroundColor = .green
-        }
-        print("Reachability Summary")
-        print("Status:", Network.reachability.status)
-        print("HostName:", Network.reachability.hostname ?? "nil")
-        print("Reachable:", Network.reachability.isReachable)
-        print("Wifi:", Network.reachability.isReachableViaWiFi)
-    }
-    
-    @objc func statusManager(_ notification: Notification) {
-        updateUserInterface()
-    }
-    
     
     fileprivate func intialSetUp() {
         view.backgroundColor = .white
         configureTableView()
         configuretableViewCell()
-        viewModel.fetchFacts{ [weak self] breaches in
-            DispatchQueue.main.async {
-                self?.title = self?.viewModel.title
-                self?.updateUI()
+        if Utility.isInternetReachable() {
+            viewModel.fetchFacts{ [weak self] _ in
+                DispatchQueue.main.async {
+                    self?.title = self?.viewModel.title
+                    self?.updateUI()
+                }
             }
+        }else{
+            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.AlertTitle.Localized)
         }
+        
     }
+    
     
     func updateUI() {
         factsTableView.reloadData()
@@ -87,14 +66,19 @@ class FactsViewController: UIViewController {
     }
     
     @objc func serviceCall() {
-        DispatchQueue.main.async {
+        if Utility.isInternetReachable() {
             self.viewModel.fetchFacts{ [weak self] _ in
                 DispatchQueue.main.async {
+                    self?.title = self?.viewModel.title
                     self?.updateUI()
                 }
             }
+            refreshControl.endRefreshing()
+        }else{
+            factsTableView.setContentOffset(.zero, animated: true)
+            refreshControl.endRefreshing()
+            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.AlertTitle.Localized)
         }
-        refreshControl.endRefreshing()
     }
 }
 
