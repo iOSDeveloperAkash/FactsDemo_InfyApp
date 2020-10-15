@@ -11,7 +11,7 @@ let factsExtensionUrl:String = "/s/2iodh4vg0eortkl/facts.json"
 
 enum Message:String {
     case NoInternetConnection = "no_internet_connection"
-    case AlertTitle           = "error"
+    case Error           = "error"
     var Localized: String {
         return self.rawValue.localized
     }

@@ -33,7 +33,7 @@ class FactsViewController: UIViewController {
                 }
             }
         }else{
-            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.AlertTitle.Localized)
+            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.Error.Localized)
         }
         
     }
@@ -77,7 +77,7 @@ class FactsViewController: UIViewController {
         }else{
             factsTableView.setContentOffset(.zero, animated: true)
             refreshControl.endRefreshing()
-            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.AlertTitle.Localized)
+            self.alert(message: Message.NoInternetConnection.Localized, alertTitle: Message.Error.Localized)
         }
     }
 }

@@ -1,7 +1,11 @@
 /* 
-  Localizable.strings
-  FactsDemo_InfyApp
+ Localizable.strings
+ FactsDemo_InfyApp
+ 
+ Created by Akash on 15/10/20.
+ Copyright © 2020 FactsDemo_InfyApp. All rights reserved.
+ */
 
-  Created by Akash on 15/10/20.
-  Copyright © 2020 FactsDemo_InfyApp. All rights reserved.
-*/
+// MARK: - Messages ::
+"error" = "Error";
+"no_internet_connection" = "Please check your internet connection.";

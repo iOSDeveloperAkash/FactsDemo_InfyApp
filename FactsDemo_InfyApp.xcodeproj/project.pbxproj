@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F20CBCF22537030300E6D4A9 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCF12537030300E6D4A9 /* Reach.swift */; };
-		F20CBCF42537033000E6D4A9 /* MyModel in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF32537033000E6D4A9 /* MyModel */; };
 		F20CBCF62537073200E6D4A9 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCF52537073200E6D4A9 /* RequestFactory.swift */; };
 		F20CBCFA253729C800E6D4A9 /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF9253729C800E6D4A9 /* facts.json */; };
 		F20CBCFC25381CB300E6D4A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFB25381CB300E6D4A9 /* Reachability.swift */; };
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		F20CBCF12537030300E6D4A9 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
-		F20CBCF32537033000E6D4A9 /* MyModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyModel; sourceTree = "<group>"; };
 		F20CBCF52537073200E6D4A9 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		F20CBCF9253729C800E6D4A9 /* facts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facts.json; sourceTree = "<group>"; };
 		F20CBCFB25381CB300E6D4A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				F20CBCF12537030300E6D4A9 /* Reach.swift */,
 				F20CBCF52537073200E6D4A9 /* RequestFactory.swift */,
 				F20CBCFB25381CB300E6D4A9 /* Reachability.swift */,
-				F20CBCF32537033000E6D4A9 /* MyModel */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -303,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20CBCF42537033000E6D4A9 /* MyModel in Resources */,
 				F20CBD002538255000E6D4A9 /* Localizable.strings in Resources */,
 				F27D6EE325306607000B7FCC /* LaunchScreen.storyboard in Resources */,
 				F27D6EE025306607000B7FCC /* Assets.xcassets in Resources */,
