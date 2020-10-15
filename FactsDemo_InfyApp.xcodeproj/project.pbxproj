@@ -11,6 +11,9 @@
 		F20CBCF42537033000E6D4A9 /* MyModel in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF32537033000E6D4A9 /* MyModel */; };
 		F20CBCF62537073200E6D4A9 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCF52537073200E6D4A9 /* RequestFactory.swift */; };
 		F20CBCFA253729C800E6D4A9 /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCF9253729C800E6D4A9 /* facts.json */; };
+		F20CBCFC25381CB300E6D4A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFB25381CB300E6D4A9 /* Reachability.swift */; };
+		F20CBCFE2538247F00E6D4A9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */; };
+		F20CBD002538255000E6D4A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCFF2538255000E6D4A9 /* Localizable.strings */; };
 		F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED6253065FE000B7FCC /* AppDelegate.swift */; };
 		F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */; };
 		F27D6EDB253065FE000B7FCC /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D6EDA253065FE000B7FCC /* FactsViewController.swift */; };
@@ -45,6 +48,9 @@
 		F20CBCF32537033000E6D4A9 /* MyModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyModel; sourceTree = "<group>"; };
 		F20CBCF52537073200E6D4A9 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		F20CBCF9253729C800E6D4A9 /* facts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facts.json; sourceTree = "<group>"; };
+		F20CBCFB25381CB300E6D4A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F20CBCFF2538255000E6D4A9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F27D6ED3253065FE000B7FCC /* Facts App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facts App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27D6ED6253065FE000B7FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27D6ED8253065FE000B7FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				F27D6EDF25306607000B7FCC /* Assets.xcassets */,
 				F27D6EE125306607000B7FCC /* LaunchScreen.storyboard */,
 				F27D6EE425306607000B7FCC /* Info.plist */,
+				F20CBCFF2538255000E6D4A9 /* Localizable.strings */,
 			);
 			path = FactsDemo_InfyApp;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 			children = (
 				F27D6EFE25321A19000B7FCC /* UITableViewExtension.swift */,
 				F27D70562536E778000B7FCC /* UIViewController+Extension.swift */,
+				F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				F27D704E2535BBD4000B7FCC /* ImageHelper.swift */,
 				F20CBCF12537030300E6D4A9 /* Reach.swift */,
 				F20CBCF52537073200E6D4A9 /* RequestFactory.swift */,
+				F20CBCFB25381CB300E6D4A9 /* Reachability.swift */,
 				F20CBCF32537033000E6D4A9 /* MyModel */,
 			);
 			path = Utility;
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20CBCF42537033000E6D4A9 /* MyModel in Resources */,
+				F20CBD002538255000E6D4A9 /* Localizable.strings in Resources */,
 				F27D6EE325306607000B7FCC /* LaunchScreen.storyboard in Resources */,
 				F27D6EE025306607000B7FCC /* Assets.xcassets in Resources */,
 			);
@@ -321,6 +331,7 @@
 				F27D70492534573D000B7FCC /* ConstantsAPI.swift in Sources */,
 				F27D7047253449FF000B7FCC /* HTTPManager.swift in Sources */,
 				F27D704D2535890E000B7FCC /* Fact.swift in Sources */,
+				F20CBCFC25381CB300E6D4A9 /* Reachability.swift in Sources */,
 				F27D6EFF25321A19000B7FCC /* UITableViewExtension.swift in Sources */,
 				F27D6ED7253065FE000B7FCC /* AppDelegate.swift in Sources */,
 				F20CBCF22537030300E6D4A9 /* Reach.swift in Sources */,
@@ -328,6 +339,7 @@
 				F27D704C2535890E000B7FCC /* Row.swift in Sources */,
 				F27D6F0125321AF9000B7FCC /* ReusableView.swift in Sources */,
 				F27D6ED9253065FE000B7FCC /* SceneDelegate.swift in Sources */,
+				F20CBCFE2538247F00E6D4A9 /* StringExtension.swift in Sources */,
 				F27D6EFC2531A1B8000B7FCC /* FactsTableViewCell.swift in Sources */,
 				F27D704F2535BBD4000B7FCC /* ImageHelper.swift in Sources */,
 				F27D70512535BC0E000B7FCC /* ImageManager.swift in Sources */,
