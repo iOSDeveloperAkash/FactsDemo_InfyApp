@@ -13,8 +13,6 @@
 		F20CBCFC25381CB300E6D4A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFB25381CB300E6D4A9 /* Reachability.swift */; };
 		F20CBCFE2538247F00E6D4A9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */; };
 		F20CBD002538255000E6D4A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F20CBCFF2538255000E6D4A9 /* Localizable.strings */; };
-		F20CBD0325385A9400E6D4A9 /* FeedsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */; };
-		F20CBD0525386DBB00E6D4A9 /* FactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBD0425386DBB00E6D4A9 /* FactsViewModelTests.swift */; };
 		F20CBD09253987A300E6D4A9 /* MockApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBD08253987A300E6D4A9 /* MockApiRepository.swift */; };
 		F20CBD0B253987FA00E6D4A9 /* FactDemoTestCasesFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBD0A253987FA00E6D4A9 /* FactDemoTestCasesFile.swift */; };
 		F20CBD0C2539888B00E6D4A9 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D704B2535890E000B7FCC /* Fact.swift */; };
@@ -57,8 +55,6 @@
 		F20CBCFB25381CB300E6D4A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F20CBCFD2538247F00E6D4A9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F20CBCFF2538255000E6D4A9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsServiceTests.swift; sourceTree = "<group>"; };
-		F20CBD0425386DBB00E6D4A9 /* FactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModelTests.swift; sourceTree = "<group>"; };
 		F20CBD08253987A300E6D4A9 /* MockApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiRepository.swift; sourceTree = "<group>"; };
 		F20CBD0A253987FA00E6D4A9 /* FactDemoTestCasesFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactDemoTestCasesFile.swift; sourceTree = "<group>"; };
 		F20CBD0D253988E100E6D4A9 /* MockUrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlSession.swift; sourceTree = "<group>"; };
@@ -162,8 +158,6 @@
 			children = (
 				F20CBCF82537298600E6D4A9 /* Mocks */,
 				F27D6EED25306608000B7FCC /* FactsDemo_InfyAppTests.swift */,
-				F20CBD0425386DBB00E6D4A9 /* FactsViewModelTests.swift */,
-				F20CBD0225385A9300E6D4A9 /* FeedsServiceTests.swift */,
 				F20CBD0A253987FA00E6D4A9 /* FactDemoTestCasesFile.swift */,
 				F20CBD08253987A300E6D4A9 /* MockApiRepository.swift */,
 				F20CBD0D253988E100E6D4A9 /* MockUrlSession.swift */,
@@ -376,11 +370,9 @@
 				F20CBD162539A31B00E6D4A9 /* MockUrlSession.swift in Sources */,
 				F27D6EEE25306608000B7FCC /* FactsDemo_InfyAppTests.swift in Sources */,
 				F20CBD0C2539888B00E6D4A9 /* Fact.swift in Sources */,
-				F20CBD0325385A9400E6D4A9 /* FeedsServiceTests.swift in Sources */,
 				F20CBD1025398AE700E6D4A9 /* Row.swift in Sources */,
 				F20CBD0B253987FA00E6D4A9 /* FactDemoTestCasesFile.swift in Sources */,
 				F20CBD09253987A300E6D4A9 /* MockApiRepository.swift in Sources */,
-				F20CBD0525386DBB00E6D4A9 /* FactsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
