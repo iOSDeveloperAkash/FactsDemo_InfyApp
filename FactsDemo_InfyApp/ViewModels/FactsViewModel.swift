@@ -19,6 +19,7 @@ class FactsViewModel{
             switch result{
             case .failure(let error):
                 print("failure:\(error)")
+                self?.rows = []
                 completion(.failure(error))
                 
             case .success(let data):
@@ -38,11 +39,4 @@ class FactsViewModel{
         }
         
     }
-    func cancelFetchFacts() {
-        if let task = task {
-            task.cancel()
-        }
-        task = nil
-    }
-
 }

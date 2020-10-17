@@ -9,10 +9,13 @@
 import Foundation
 class HttpManager{
     static let shared = HttpManager()
+    var task: URLSessionTask?
+
     enum HTTPError:Error{
         case invalidUrl
         case invalidResponse(Data?, URLResponse?)
     }
+    
     
     public func get(urlString:String, completionBlock:@escaping(Result<Data,Error>)->Void){
         guard let url = URL(string: urlString) else {
