@@ -51,9 +51,15 @@ class FactViewControllerTest: XCTestCase {
         wait(for: [expectation], timeout: 3)
     }
     
-    func testHasTableviewRows() {
+    func testHasTableViewRows() {
         factViewControler.serviceCall()
         sleep(3)
         XCTAssertNotNil(factViewControler.factsTableView.numberOfRows(inSection: 0))
     }
+    
+    func testControllerHasRefereshControl(){
+        XCTAssertNotNil(factViewControler.refreshControl)
+    }
+    
+    
 }

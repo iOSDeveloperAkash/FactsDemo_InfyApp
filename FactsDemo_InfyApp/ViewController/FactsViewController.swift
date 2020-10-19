@@ -12,7 +12,7 @@ class FactsViewController: UIViewController {
     
     /// Properties
     let factsTableView = UITableView()
-    private let refreshControl = UIRefreshControl()
+    let refreshControl = UIRefreshControl()
     private var viewModel = FactsViewModel()
     
     override func viewDidLoad() {
@@ -44,6 +44,7 @@ class FactsViewController: UIViewController {
         factsTableView.reloadData()
     }
     
+    /// Configure tableview
      func configureTableView(){
         view.addSubview(factsTableView)
         factsTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +58,7 @@ class FactsViewController: UIViewController {
         factsTableView.rowHeight = UITableView.automaticDimension
     }
     
+    /// Configure tableview cell
     fileprivate func configuretableViewCell(){
         factsTableView.registerCell(FactsTableViewCell.self)
     }
@@ -66,7 +68,7 @@ class FactsViewController: UIViewController {
         self.factsTableView.addSubview(refreshControl)
     }
     
-    /// <#Description#>
+    /// Refresh Control Action
     @objc func serviceCall() {
         if Utility.isInternetReachable() {
             self.viewModel.fetchFacts{ [weak self] _ in
