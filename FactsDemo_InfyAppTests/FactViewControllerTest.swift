@@ -11,11 +11,13 @@ import XCTest
 
 class FactViewControllerTest: XCTestCase {
     var factViewControler: FactsViewController!
+    var factTableViewCell: FactsTableViewCell!
     var viewModel: FactsViewModel!
     
     override func setUpWithError() throws {
         factViewControler = FactsViewController()
         viewModel = FactsViewModel()
+        factViewControler.loadView()
         factViewControler.viewDidLoad()
     }
     
@@ -26,6 +28,10 @@ class FactViewControllerTest: XCTestCase {
     override func tearDown() {
         factViewControler = nil
         viewModel = nil
+    }
+    
+    func testControllerHasRefereshControl(){
+        XCTAssertNotNil(factViewControler.refreshControl)
     }
     
     func testTableViewHasDatasource() {
@@ -39,11 +45,10 @@ class FactViewControllerTest: XCTestCase {
     func testHasValidApiResponse() {
         let expectation = XCTestExpectation.init(description: "CheckResponse")
         viewModel.fetchFacts { (apiResponse) in
-            print(apiResponse)
             expectation.fulfill()
             switch apiResponse {
             case .success(let data):
-               XCTAssertNotNil( data.rows?.count)
+                XCTAssertNotNil( data.rows?.count)
             case .failure(let error):
                 XCTAssertNotNil( error.localizedDescription)
             }
@@ -57,9 +62,10 @@ class FactViewControllerTest: XCTestCase {
         XCTAssertNotNil(factViewControler.factsTableView.numberOfRows(inSection: 0))
     }
     
-    func testControllerHasRefereshControl(){
-        XCTAssertNotNil(factViewControler.refreshControl)
+    func testTableViewConformsToTableViewDataSourceProtocol() {
+        XCTAssertTrue(factViewControler.conforms(to: UITableViewDataSource.self))
+        XCTAssertTrue(factViewControler.responds(to: #selector(factViewControler.tableView(_:numberOfRowsInSection:))))
+        XCTAssertTrue(factViewControler.responds(to: #selector(factViewControler.tableView(_:cellForRowAt:))))
     }
-    
     
 }

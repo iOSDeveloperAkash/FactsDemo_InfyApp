@@ -25,7 +25,7 @@ class FactsViewController: UIViewController {
     fileprivate func intialSetUp() {
         view.backgroundColor = .white
         configureTableView()
-        configuretableViewCell()
+        configureTableViewCell()
         if Utility.isInternetReachable() {
             viewModel.fetchFacts{ [weak self] _ in
                 DispatchQueue.main.async {
@@ -45,7 +45,7 @@ class FactsViewController: UIViewController {
     }
     
     /// Configure tableview
-     func configureTableView(){
+    func configureTableView(){
         view.addSubview(factsTableView)
         factsTableView.translatesAutoresizingMaskIntoConstraints = false
         factsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -59,7 +59,7 @@ class FactsViewController: UIViewController {
     }
     
     /// Configure tableview cell
-    fileprivate func configuretableViewCell(){
+    func configureTableViewCell(){
         factsTableView.registerCell(FactsTableViewCell.self)
     }
     
@@ -93,7 +93,7 @@ extension FactsViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FactsTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        guard let fact = viewModel.rows[indexPath.row] else {return cell}
+        guard let fact = viewModel.rows[indexPath.row] else {return UITableViewCell()}
         if let fact = viewModel.rows[indexPath.row]{
             cell.populateCell(with: fact)
             guard let imageUrl = fact.imageHref else {
