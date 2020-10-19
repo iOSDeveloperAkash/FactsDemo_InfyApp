@@ -10,6 +10,7 @@ import UIKit
 
 class FactsViewController: UIViewController {
     
+    /// Properties
     let factsTableView = UITableView()
     private let refreshControl = UIRefreshControl()
     private var viewModel = FactsViewModel()
@@ -65,6 +66,7 @@ class FactsViewController: UIViewController {
         self.factsTableView.addSubview(refreshControl)
     }
     
+    /// <#Description#>
     @objc func serviceCall() {
         if Utility.isInternetReachable() {
             self.viewModel.fetchFacts{ [weak self] _ in

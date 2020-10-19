@@ -12,8 +12,9 @@ import UIKit
 class FactsViewModel{
     var rows = [Row?]()
     var title = String()
-    var task: URLSessionTask?
-
+    
+    /// API Call function to fetch facts.
+    /// - Parameter completion: Returns data if sucess else gives error.
     func fetchFacts(completion: @escaping (Result<Fact, Error>) -> Void) {
         HttpManager.shared.get(urlString: baseUrl+factsExtensionUrl) { [weak self] result in
             switch result{
