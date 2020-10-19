@@ -67,5 +67,4 @@ class FactViewControllerTest: XCTestCase {
         XCTAssertTrue(factViewControler.responds(to: #selector(factViewControler.tableView(_:numberOfRowsInSection:))))
         XCTAssertTrue(factViewControler.responds(to: #selector(factViewControler.tableView(_:cellForRowAt:))))
     }
-    
 }
